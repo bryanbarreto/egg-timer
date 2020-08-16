@@ -13,6 +13,7 @@
 		C38765EC24E97CCA007A72F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C38765EA24E97CCA007A72F8 /* Main.storyboard */; };
 		C38765EE24E97CD0007A72F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C38765ED24E97CD0007A72F8 /* Assets.xcassets */; };
 		C38765F124E97CD0007A72F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C38765EF24E97CD0007A72F8 /* LaunchScreen.storyboard */; };
+		C38765F924E97F43007A72F8 /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C38765F824E97F43007A72F8 /* alarm_sound.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C38765ED24E97CD0007A72F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C38765F024E97CD0007A72F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C38765F224E97CD0007A72F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C38765F824E97F43007A72F8 /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_sound.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		C38765E324E97CCA007A72F8 /* Egg Timer */ = {
 			isa = PBXGroup;
 			children = (
+				C38765F824E97F43007A72F8 /* alarm_sound.mp3 */,
 				C38765E424E97CCA007A72F8 /* AppDelegate.swift */,
 				C38765E624E97CCA007A72F8 /* SceneDelegate.swift */,
 				C38765E824E97CCA007A72F8 /* ViewController.swift */,
@@ -127,6 +130,7 @@
 			files = (
 				C38765F124E97CD0007A72F8 /* LaunchScreen.storyboard in Resources */,
 				C38765EE24E97CD0007A72F8 /* Assets.xcassets in Resources */,
+				C38765F924E97F43007A72F8 /* alarm_sound.mp3 in Resources */,
 				C38765EC24E97CCA007A72F8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
