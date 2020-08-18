@@ -122,18 +122,22 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ihw-6l-a1r">
-                                <rect key="frame" x="16" y="419" width="343" height="112"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ihw-6l-a1r">
+                                <rect key="frame" x="16" y="419" width="343" height="120"/>
                                 <subviews>
-                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="e9L-zv-qsv">
-                                        <rect key="frame" x="52" y="55" width="238" height="2"/>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="e9L-zv-qsv">
+                                        <rect key="frame" x="0.0" y="55" width="323" height="2.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="10" id="hUm-3J-vYd"/>
+                                        </constraints>
+                                        <color key="progressTintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="trackTintColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </progressView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="e9L-zv-qsv" firstAttribute="leading" secondItem="ihw-6l-a1r" secondAttribute="leading" constant="52" id="Apq-xr-G35"/>
-                                    <constraint firstAttribute="bottom" secondItem="e9L-zv-qsv" secondAttribute="bottom" constant="55" id="ZMg-rT-Bw3"/>
-                                    <constraint firstItem="e9L-zv-qsv" firstAttribute="top" secondItem="ihw-6l-a1r" secondAttribute="top" constant="55" id="iLh-Gb-pdy"/>
-                                    <constraint firstAttribute="trailing" secondItem="e9L-zv-qsv" secondAttribute="trailing" constant="53" id="kd2-C6-EBp"/>
+                                    <constraint firstItem="e9L-zv-qsv" firstAttribute="leading" secondItem="ihw-6l-a1r" secondAttribute="leading" id="Apq-xr-G35"/>
+                                    <constraint firstItem="e9L-zv-qsv" firstAttribute="centerY" secondItem="ihw-6l-a1r" secondAttribute="centerY" id="Wc2-J9-9nJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="e9L-zv-qsv" secondAttribute="trailing" constant="20" symbolic="YES" id="kd2-C6-EBp"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -153,6 +157,7 @@
                     </view>
                     <connections>
                         <outlet property="mainLabel" destination="mCv-Ik-YkU" id="DdB-HZ-zPl"/>
+                        <outlet property="progressBar" destination="e9L-zv-qsv" id="Qtc-Fg-cbw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
